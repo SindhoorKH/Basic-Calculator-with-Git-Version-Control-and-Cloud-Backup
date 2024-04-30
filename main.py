@@ -1,4 +1,4 @@
-from calc_func import add, subtract, multiply, divide
+from calc_func import add, subtract, multiply, divide, power
 
 def main():
     print("Welcome to the Calculator App")
@@ -6,7 +6,8 @@ def main():
           1. Add 
           2. Subtract 
           3. Multiply 
-          4. Divide''')
+          4. Divide
+          5. Power''')
     
     choice = input("Enter choice: ")
 
@@ -24,6 +25,10 @@ def main():
         
     elif choice == '4':
         print("Result:", divide(num1, num2))
+        
+    elif choice == '5':
+        print("Result:", power(num1, num2))
+        
     else:
         print("Invalid input!!!")
 
